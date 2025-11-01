@@ -1,0 +1,29 @@
+nohup: ignoring input
+TgCrypto is missing! Pyrogram will work the same, but at a much slower speed. More info: https://docs.pyrogram.org/topics/speedups
+/usr/local/lib/python3.11/dist-packages/pyrogram/methods/utilities/run.py:84: RuntimeWarning: coroutine 'Start.start' was never awaited
+  self.start()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+بدء تشغيل عميل تليجرام لمراقبة القنوات...
+Traceback (most recent call last):
+  File "/home/ubuntu/telegram_proxy_bot/client_bot.py", line 249, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.11/asyncio/runners.py", line 188, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 120, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/telegram_proxy_bot/client_bot.py", line 245, in main
+    await app.run()
+          ^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pyrogram/methods/utilities/run.py", line 85, in run
+    run(idle())
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 626, in run_until_complete
+    self._check_running()
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 586, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+sys:1: RuntimeWarning: coroutine 'idle' was never awaited
